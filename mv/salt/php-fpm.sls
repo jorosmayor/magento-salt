@@ -18,7 +18,6 @@ php-fpm:
       - php8.1-zip 
       - php8.1-redis 
       - php8.1-intl 
-  #service.running:
-  #    - require: 
-  #      - enable: True
-  #      - pkg: php8.1-fpm
+  service.running:
+    - name: php8.1-fpm
+    - enable: True

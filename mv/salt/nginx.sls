@@ -8,7 +8,7 @@ nginx:
     #- watch:
     #  - file: /etc/nginx/conf.d/default.conf
 
-#/etc/nginx/nginx.conf:
+#/etc/nginx/conf.d/default.conf:
 #  file.managed:
 #    - source: salt://config/nginx/default.conf
 #    - user: root
