@@ -4,7 +4,23 @@ Vagrant.configure("2") do |config|
       master.vm.define "master"
       master.vm.hostname = "salt"
       master.vm.network :private_network, ip: '192.168.56.2'
-      master.vm.provision :shell, path: "scripts/master.sh", run: 'always'
+      master.vm.provision :salt do |salt|
+        salt.master_config = "config/master"
+        salt.master_key = "ssh-keys/master-ssh.pem"
+        salt.master_pub = "ssh-keys/master-ssh.pub"
+        salt.minion_key = "ssh-keys/minion-ssh.pem"
+        salt.minion_pub = "ssh-keys/minion-ssh.pub"
+        salt.seed_master = {
+          "minion" => "ssh-keys/minion-ssh.pub"
+        }
+        salt.install_type = "stable"
+        salt.install_master = true
+        salt.no_minion = true
+        salt.verbose = true
+        salt.colorize = true
+        salt.bootstrap_options = "-P -c /tmp -x python3"
+      end
+      #master.vm.provision :shell, path: "scripts/master.sh", run: 'always'
     end
   
     config.vm.define :minion do |minion|
@@ -12,7 +28,16 @@ Vagrant.configure("2") do |config|
       minion.vm.define "minion"
       minion.vm.hostname = "salt"
       minion.vm.network :private_network, ip: '192.168.56.3'
-      minion.vm.provision :shell, path: "scripts/minion.sh", run: 'always'
+      minion.vm.provision :salt do |salt|
+        salt.minion_config = "config/minion"
+        salt.minion_key = "ssh-keys/minion-ssh.pem"
+        salt.minion_pub = "ssh-keys/minion-ssh.pub"
+        salt.install_type = "stable"
+        salt.verbose = true
+        salt.colorize = true
+        salt.bootstrap_options = "-P -c /tmp -x python3"
+      end
+      #minion.vm.provision :shell, path: "scripts/minion.sh", run: 'always'
     end
 
 end
