@@ -1,3 +1,4 @@
 base:
   '*':
     - nginx
+    - php-fpm
