@@ -4,3 +4,4 @@ base:
     - php
     - mysql
     - redis
+    - rabbit
