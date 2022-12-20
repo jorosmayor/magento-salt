@@ -10,7 +10,7 @@ nginx:
 
 #/etc/nginx/conf.d/default.conf:
 #  file.managed:
-#    - source: salt://config/nginx/default.conf
+#    - source: salt://conf/default.conf
 #    - user: root
 #    - group: root
 #    - mode: 644

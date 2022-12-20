@@ -5,3 +5,4 @@ base:
     - mysql
     - redis
     - rabbit
+    - elastic
