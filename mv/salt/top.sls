@@ -1,4 +1,5 @@
 base:
   '*':
     - nginx
-    - php-fpm
+    - php
+    - mysql
