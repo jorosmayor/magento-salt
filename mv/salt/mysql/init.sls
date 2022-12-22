@@ -1,2 +1,8 @@
 include:
-  - .install
+  - .server
+  - .python
+  - .config
+  - .client
+  #- .service
+  - .databases
+  - .users
