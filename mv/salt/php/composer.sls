@@ -2,11 +2,11 @@ composer:
   environ.setenv:
     - name: variables
     - value: 
-        COMPOSER_HOME: /root/.config/composer
+        COMPOSER_HOME: /root/.composer
         COMPOSER_ALLOW_SUPERUSER: '1'
     - update_minion: True
   file.managed:
-    - name: /root/.config/composer/auth.json
+    - name: /root/.composer/auth.json
     - makedirs: True
     - source: salt://php/conf/auth.json
   cmd.run: 

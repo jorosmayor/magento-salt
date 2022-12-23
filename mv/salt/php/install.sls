@@ -17,7 +17,10 @@ php-fpm:
       - php8.1-soap 
       - php8.1-zip 
       - php8.1-redis 
-      - php8.1-intl 
+      - php8.1-intl
+      - php8.1-bcmath
+      - zip
+      - unzip
   service.running:
     - name: php8.1-fpm
     - enable: True
