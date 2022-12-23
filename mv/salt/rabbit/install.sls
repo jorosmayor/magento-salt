@@ -5,7 +5,4 @@ rabbitmq:
   service.running:
     - name: rabbitmq-server
     - enable: True
-
-  rabbitmq_user.present:
-    - name: magento
-    - password: magento
+  
