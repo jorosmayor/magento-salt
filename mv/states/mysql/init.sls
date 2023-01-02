@@ -3,6 +3,5 @@ include:
   - .python
   - .config
   - .client
-  #- .service
   - .databases
   - .users

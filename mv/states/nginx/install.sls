@@ -1,12 +1,12 @@
 nginx:
   pkg.installed:
     - name: nginx
-    - version: 1.18.0*
+    - version: {{ nginx_version }}
   file.managed:
     - name: /etc/nginx/conf.d/default.conf
     - source: salt://nginx/conf/default.conf
-    - user: root
-    - group: root
+    - user: {{ user_root }}
+    - group: {{ pass_root }}
     - mode: 644
   service.running:
     - require:

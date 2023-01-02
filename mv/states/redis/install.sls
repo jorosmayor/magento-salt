@@ -1,7 +1,7 @@
 redis:
   pkg.installed:
     - name: redis-server
-    - version: 5*
+    - version: {{ pillar['version'] }}
   service.running:
     - name: redis
     - enable: True
