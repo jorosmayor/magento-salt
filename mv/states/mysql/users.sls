@@ -1,12 +1,12 @@
 mysql-user:
   mysql_user.present:
-    - name: {{ mysql_user }}
-    - password: {{ mysql_pass }}
-    - connection_user: {{ user_root }}
-    - connection_pass: {{ pass_root }}
+    - name: {{ pillar['mysql']['user'] }}
+    - password: {{ pillar['mysql']['pass'] }}
+    - connection_user: {{ pillar['root']['user'] }}
+    - connection_pass: {{ pillar['root']['pass'] }}
   mysql_grants.present:
-    - database: {{ mysql_database }}.*
-    - grant: {{ mysql_grants }}
-    - user: {{ mysql_user }}
-    - connection_user: {{ mysql_root }}
-    - connection_pass: {{ mysql_pass_root }}
+    - database: {{ pillar['mysql']['database'] }}.*
+    - grant: {{ pillar['mysql']['grants'] }}
+    - user: {{ pillar['mysql']['user'] }}
+    - connection_user: {{ pillar['root']['user'] }}
+    - connection_pass: {{ pillar['root']['pass'] }}

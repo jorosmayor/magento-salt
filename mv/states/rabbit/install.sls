@@ -1,7 +1,7 @@
 rabbitmq:
   pkg.installed:
     - name: rabbitmq-server
-    - version: {{ pillar['version'] }}
+    - version: {{ pillar['rabbit']['version'] }}
   service.running:
     - name: rabbitmq-server
     - enable: True

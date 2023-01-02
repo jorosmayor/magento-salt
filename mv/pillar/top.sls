@@ -1,3 +1,8 @@
 base:
   '*':
-    - default
+    - root
+    - mysql
+    - nginx
+    - rabbit
+    - redis
+    - elastic

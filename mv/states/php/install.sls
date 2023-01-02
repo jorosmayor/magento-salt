@@ -1,24 +1,24 @@
 php-fpm:
   pkg.installed:
     - pkgs:
-      - php{{ pillar['version'] }}-fpm 
-      - php{{ pillar['version'] }}-common 
-      - php{{ pillar['version'] }}-mysql 
-      - php{{ pillar['version'] }}-xml 
-      - php{{ pillar['version'] }}-xmlrpc 
-      - php{{ pillar['version'] }}-curl 
-      - php{{ pillar['version'] }}-gd 
-      - php{{ pillar['version'] }}-imagick 
-      - php{{ pillar['version'] }}-cli 
-      - php{{ pillar['version'] }}-dev 
-      - php{{ pillar['version'] }}-imap 
-      - php{{ pillar['version'] }}-mbstring 
-      - php{{ pillar['version'] }}-opcache 
-      - php{{ pillar['version'] }}-soap 
-      - php{{ pillar['version'] }}-zip 
-      - php{{ pillar['version'] }}-redis 
-      - php{{ pillar['version'] }}-intl
-      - php{{ pillar['version'] }}-bcmath
+      - php8.1-fpm 
+      - php8.1-common 
+      - php8.1-mysql 
+      - php8.1-xml 
+      - php8.1-xmlrpc 
+      - php8.1-curl 
+      - php8.1-gd 
+      - php8.1-imagick 
+      - php8.1-cli 
+      - php8.1-dev 
+      - php8.1-imap 
+      - php8.1-mbstring 
+      - php8.1-opcache 
+      - php8.1-soap 
+      - php8.1-zip 
+      - php8.1-redis 
+      - php8.1-intl
+      - php8.1-bcmath
   service.running:
-    - name: php{{ pillar['version'] }}-fpm
+    - name: php8.1-fpm
     - enable: True

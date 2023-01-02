@@ -1,0 +1,12 @@
+mysql:
+  pkg_name_client: 'mysql-client'
+  pkg_name_server: 'mysql-server'
+  python: 'python3-mysqldb'
+  pkg_debconf: 'debconf'
+  pkg_debconf_utils: 'debconf-utils'
+  database: 'magento'
+  user: 'magento'
+  pass: 'magento'
+  grants: 'ALL PRIVILEGES'
+  user_root: 'root'
+  pass_root: 'root'

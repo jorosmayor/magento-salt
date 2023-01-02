@@ -1,22 +1,21 @@
 mysql_debconf_install:
   pkg.installed:
-    - name: debconf
+    - name: {{ pillar['mysql']['pkg_debconf'] }}
 
 mysql_debconf_utils:
   pkg.installed:
-    - name: debconf-utils
+    - name: {{ pillar['mysql']['pkg_debconf_utils'] }}
 
 mysql_server_install:
   pkg.installed:
-    - name: mysql-server
-
+    - name: {{ pillar['mysql']['pkg_name_server'] }}
 mysql_debconf_settings:
   debconf.set:
-    - name: mysql-server
+    - name: {{ pillar['mysql']['pkg_name_server'] }}
     - data:
-        'mysql-server/root_password': {'type': 'password', 'value': 'root'}
-        'mysql-server/root_password_again': {'type': 'password', 'value': 'root'}
+        'mysql-server/root_password': {'type': 'password', 'value': '{{ pillar['mysql']['pass_root'] }}'}
+        'mysql-server/root_password_again': {'type': 'password', 'value': '{{ pillar['mysql']['pass_root'] }}'}
     - require:
       - pkg: debconf
     - require_in:
-      - mysql_server_install
+      - {{ pillar['mysql']['pkg_name_server'] }}
