@@ -4,4 +4,4 @@ mysql_server_config:
     - makedirs: True
     - source: salt://mysql/conf/mysqld.cnf
     - require:
-      - pkg: {{ pillar['mysql']['pkg_name_server'] }}
+      - pkg: {{ pillar['mysql']['pkg_name_server'] }} 
