@@ -1,0 +1,19 @@
+magento:
+  version: '2.4.5-p1'
+  language: 'es_ES'
+  currency: 'EUR'
+  timezone: 'Europe/Madrid'
+  admin:
+    user: 'adminjordi'
+    password: 'admin123'
+    email: 'jordiros@onestic.com'
+    name: 'Jordi'
+    lastname: 'Ros'
+  db-host: '127.0.0.1'
+  elastic:
+    host: '127.0.0.1'
+    port: '9200'
+  amqp:
+    host: '127.0.0.1'
+    port: '5672'
+  redis-host: 'localhost'
