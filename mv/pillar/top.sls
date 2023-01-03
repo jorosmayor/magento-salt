@@ -6,3 +6,5 @@ base:
     - rabbit
     - redis
     - elastic
+    - composer
+    - php
