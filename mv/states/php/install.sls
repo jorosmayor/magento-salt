@@ -5,5 +5,5 @@ php-fpm:
       - "php{{ pillar['php']['version'] }}-{{ package }}"
     {% endfor %}
   service.running:
-    - name: php8.1-fpm
+    - name: "php{{ pillar['php']['version'] }}-fpm"
     - enable: True
