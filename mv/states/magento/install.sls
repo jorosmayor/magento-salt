@@ -3,5 +3,5 @@ magento_install:
     - name: /var/magento.sh
     - makedirs: True
     - source: salt://magento/magento.sh
-  cmd.run:
-    - name: sh /var/magento.sh
+  #cmd.run:
+  #  - name: sh /var/magento.sh

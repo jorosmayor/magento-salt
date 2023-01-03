@@ -1,0 +1,8 @@
+{
+    "http-basic": {
+      "{{pillar['composer']['source']}}": {
+        "username": "{{ pillar['composer']['auth']['username'] }}",
+        "password": "{{ pillar['composer']['auth']['password'] }}"
+      }
+    }
+}
