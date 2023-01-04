@@ -1,21 +1,21 @@
 php:
   version: '8.1'
   packages:
-    fpm: 'fpm' 
-    common: 'common' 
-    mysql: 'mysql'
-    xml: 'xml'
-    xmlrpc: 'xmlrpc' 
-    curl: 'curl' 
-    gd: 'gd' 
-    imagick: 'imagick' 
-    cli: 'cli' 
-    dev: 'dev' 
-    imap: 'imap' 
-    mbstring: 'mbstring'
-    opcache: 'opache'
-    soap: 'soap' 
-    zip: 'zip' 
-    redis: 'redis' 
-    intl: 'intl'
-    bcmath: 'bcmath'
+    - fpm
+    - common 
+    - mysql
+    - xml
+    - xmlrpc 
+    - curl 
+    - gd 
+    - imagick 
+    - cli
+    - dev 
+    - imap 
+    - mbstring
+    - opcache
+    - soap 
+    - zip 
+    - redis 
+    - intl
+    - bcmath
