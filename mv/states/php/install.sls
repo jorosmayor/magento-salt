@@ -1,4 +1,3 @@
-{%- from "../map.jinja" import php_versions -%}
 php-fpm:
   pkg.installed:
     - pkgs:
