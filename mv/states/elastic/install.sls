@@ -3,6 +3,7 @@ elastic_pkg:
     - name: elasticsearch
   file.managed:
     - name: /etc/elasticsearch/jvm.options
+    - template: jinja
     - source: salt://elastic/conf/jvm.options
   service.running:
     - name: elasticsearch

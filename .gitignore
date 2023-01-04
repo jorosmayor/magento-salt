@@ -1,3 +1,4 @@
 .vagrant
 auth.json
 server
+composer.sls

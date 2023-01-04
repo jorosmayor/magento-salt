@@ -2,9 +2,9 @@
 php-fpm:
   pkg.installed:
     - pkgs:
-      {%- for package in php.packages -%}
-      - '{{ package }}'
-      {% endfor %}
+    {% for package in pillar['php']['packages'] %}
+      - "php{{ pillar['php']['version'] }}-{{ package }}"
+    {% endfor %}
   service.running:
-    - name: php8.1-fpm
+    - name: "php{{ pillar['php']['version'] }}-fpm"
     - enable: True
