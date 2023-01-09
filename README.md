@@ -59,7 +59,7 @@ echo -n "Dato a cifrar" | sudo gpg --armor --batch --trust-model always --encryp
 
 ```
 
-_El mensaje encriptado que devuelve lo tenemos que añadir a composer.sls de la misma forma que está, tanto para usuario como contraseña._
+_El mensaje encriptado que devuelve lo tenemos que añadir a composer.sls de la misma forma que está, tanto para usuario como contraseña. El echo lo tendremos que repetir por cada uno de los datos que queramos encriptar_
 
 _Ejecuta dentro del master un highstate
 
