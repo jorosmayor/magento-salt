@@ -26,6 +26,12 @@ _Accede al directorio magento_vagrant/mv_
 cd magento_vagrant/mv
 ```
 
+_Crea un par de claves ssh para master y minion_
+
+```
+ssh-keygen -m PEM -t rsa -b 4096 -f $(pwd)/ssh-keys -N master-ssh && ssh-keygen -m PEM -t rsa -b 4096 -f $(pwd)/ssh-keys -N minion-ssh
+```
+
 _Levanta las máquinas virtuales_
 
 ```
