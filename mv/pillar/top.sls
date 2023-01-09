@@ -8,3 +8,4 @@ base:
     - elastic
     - composer
     - php
+    - magento
