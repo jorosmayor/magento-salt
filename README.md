@@ -2,13 +2,6 @@
 
 Instalación de un rocket magento sobre una maquina virtual usando vagrant, por medio de Salt.
 
-## Comenzando 🚀
-
-_Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
-
-Mira **Deployment** para conocer como desplegar el proyecto.
-
-
 ### Pre-requisitos 📋
 
 _En tú maquina necesitas tener instalado Vagrant y Virtualbox_
@@ -45,7 +38,7 @@ _Accede a la máquina master_
 vagrant ssh master
 ```
 
-_Cifrado de los datos de composer_
+_Cifrado de los datos de los pilares_
 
 ```
 sudo apt-get install -y python3-gpg rng-tools
