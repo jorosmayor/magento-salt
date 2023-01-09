@@ -1,4 +1,31 @@
+#!yaml|gpg
 rabbit:
   version: '3.9*'
-  user: 'guest'
-  password: 'guest'
+  user: |
+      -----BEGIN PGP MESSAGE-----
+      hQGMAwOkYnQRJjvdAQv/dmaH7NyapvcvVMyTlFs3vGx/b+O6HYHwT8L4v0hPcPPt
+      CRF71vBnhijDT0Uq4CfjF6JIwvKC/0J8K4w+vcOUUzeizlXdR5+PjykPUA8T5Lxv
+      jddmJaDlOEo/uJv0APEh55VjBCj2dSTuJrG+PsVyZ0gUVs6PhviHvQaSFL56gdLX
+      MYMiuzE7mgTwuIgcof2xOCFSAqQ9CS1fPtG56IlYCyxkibf0ciH73IJKW6WBeBr4
+      7EAX3Dh+eUVFKutPKH1JEtD4WGBKvC6GRPBKA03fMrfPeRv1dSjDUCxPFo9NR9zg
+      cYoOAMXyfBZBFY0pnh3t1lf2AsWz9H71pevhssU+FDLdUs/keAjz08AAEIwbj3VG
+      lVtc/U2LDZcJj/8iAYHzT0IN9M7j7EnVGxy5O4SO0o/E8uXrj695Z0EiMZ2l83m9
+      Z8W37MMjz9C++rz6zCv5F6o4h6E9U/u75UBfwX9m2+ZhMhqdVQZbGTwPieU6AWzs
+      6bAmVKS5TQryF5+buuBT0kABlPWUNASK8OUERwyYxnMVFtgyb1fjf4Wz5z29eFs6
+      RUx3Xf9p7xHbfhIkb6vEQdPL2ZHyN8ehlzUvZUnqiJF6
+      =IFLC
+      -----END PGP MESSAGE-----
+  password: |
+      -----BEGIN PGP MESSAGE-----
+      hQGMAwOkYnQRJjvdAQv/dmaH7NyapvcvVMyTlFs3vGx/b+O6HYHwT8L4v0hPcPPt
+      CRF71vBnhijDT0Uq4CfjF6JIwvKC/0J8K4w+vcOUUzeizlXdR5+PjykPUA8T5Lxv
+      jddmJaDlOEo/uJv0APEh55VjBCj2dSTuJrG+PsVyZ0gUVs6PhviHvQaSFL56gdLX
+      MYMiuzE7mgTwuIgcof2xOCFSAqQ9CS1fPtG56IlYCyxkibf0ciH73IJKW6WBeBr4
+      7EAX3Dh+eUVFKutPKH1JEtD4WGBKvC6GRPBKA03fMrfPeRv1dSjDUCxPFo9NR9zg
+      cYoOAMXyfBZBFY0pnh3t1lf2AsWz9H71pevhssU+FDLdUs/keAjz08AAEIwbj3VG
+      lVtc/U2LDZcJj/8iAYHzT0IN9M7j7EnVGxy5O4SO0o/E8uXrj695Z0EiMZ2l83m9
+      Z8W37MMjz9C++rz6zCv5F6o4h6E9U/u75UBfwX9m2+ZhMhqdVQZbGTwPieU6AWzs
+      6bAmVKS5TQryF5+buuBT0kABlPWUNASK8OUERwyYxnMVFtgyb1fjf4Wz5z29eFs6
+      RUx3Xf9p7xHbfhIkb6vEQdPL2ZHyN8ehlzUvZUnqiJF6
+      =IFLC
+      -----END PGP MESSAGE-----
