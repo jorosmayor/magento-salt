@@ -4,7 +4,7 @@ Instalación de un rocket magento sobre una maquina virtual usando vagrant, por 
 
 ### Pre-requisitos 📋
 
-_En tú maquina necesitas tener instalado Vagrant y Virtualbox_
+_En tú máquina necesitas tener instalado Vagrant y Virtualbox_
 
 ```
 apt install virtualbox
@@ -26,7 +26,7 @@ _Accede al directorio magento_vagrant/mv_
 cd magento_vagrant/mv
 ```
 
-_Levanta las maquinas virtuales_
+_Levanta las máquinas virtuales_
 
 ```
 vagrant up
@@ -63,15 +63,15 @@ sudo salt '*' state.highstate
 
 ![Resultado del highstate](https://raw.githubusercontent.com/jorosmayor/magento-salt/main/img/Captura%20desde%202023-01-09%2011-47-52.png)
 
-_El proceso es algo lento ya que se instala magento y el sample data, por lo que paciencia :)_
+_El proceso es algo lento ya que se instala magento y el sample data, así que paciencia :)_
 
 ## Versionado 📌
 
-Version 1:
+Versión 1:
 - Instalación de de Magento por medio de states a piñon. Muy díficil de mantener.
 
 Versión 2:
 - Utilización de pillars para el tratamiento de los datos y versiones que requiere nuestro proyecto.
 
 Versión 3:
-- Cifrado de los datos sensibles con GPG
+- Cifrado de los datos sensibles con GPG.
