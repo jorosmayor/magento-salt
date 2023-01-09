@@ -61,6 +61,8 @@ _Ejecuta dentro del master un highstate
 sudo salt '*' state.highstate
 ```
 
+![Resultado del highstate](https://raw.githubusercontent.com/jorosmayor/magento-salt/main/img/Captura%20desde%202023-01-09%2011-47-52.png)
+
 _El proceso es algo lento ya que se instala magento y el sample data, por lo que paciencia :)_
 
 ## Versionado 📌
