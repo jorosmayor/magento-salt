@@ -45,6 +45,23 @@ _Accede a la máquina master_
 vagrant ssh master
 ```
 
+_Cifrado de los datos de composer_
+
+```
+sudo apt-get install -y python3-gpg rng-tools
+
+sudo mkdir -p /etc/salt/gpgkeys && sudo chmod 0700 /etc/salt/gpgkeys
+
+sudo gpg --gen-key --homedir /etc/salt/gpgkeys
+
+sudo gpg --homedir /etc/salt/gpgkeys --armor --export > my-key.gpg
+
+echo -n "Dato a cifrar" | sudo gpg --armor --batch --trust-model always --encrypt -r "mykey"
+
+```
+
+_El mensaje encriptado que devuelve lo tenemos que añadir a composer.sls de la misma forma que está, tanto para usuario como contraseña._
+
 _Ejecuta dentro del master un highstate
 
 ```
@@ -56,8 +73,10 @@ _El proceso es algo lento ya que se instala magento y el sample data, por lo que
 ## Versionado 📌
 
 Version 1:
-- Instalación de de Magento por medio de states a piñon. Muy díficil de mantener,
+- Instalación de de Magento por medio de states a piñon. Muy díficil de mantener.
 
 Versión 2:
 - Utilización de pillars para el tratamiento de los datos y versiones que requiere nuestro proyecto.
 
+Versión 3:
+- Cifrado de los datos sensibles con GPG
