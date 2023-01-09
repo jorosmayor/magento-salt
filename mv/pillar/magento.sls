@@ -22,4 +22,3 @@ magento:
     amqp-port: 5672
     amqp-user: guest
     amqp-password: guest
-    amqp-virtualhost: /

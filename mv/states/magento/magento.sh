@@ -5,7 +5,7 @@ find var generated vendor pub/static pub/media app/etc -type f -exec chmod g+w {
 find var generated vendor pub/static pub/media app/etc -type d -exec chmod g+ws {} +
 chown -R :www-data .
 chmod u+x bin/magento
-bin/magento setup:install {%for key, value in pillar['magento']['options'].items() %} \ --{{key}}={{value}}{%endfor%}
+bin/magento setup:install {%for key, value in pillar['magento']['options'].items() %} --{{key}}={{value}}{%endfor%}
 
 sudo bin/magento setup:config:set --cache-backend=redis --cache-backend-redis-server=localhost --cache-backend-redis-db=0
 sudo bin/magento setup:config:set --page-cache=redis --page-cache-redis-server=localhost --page-cache-redis-db=1
